@@ -1,0 +1,11 @@
+﻿@page "/"
+@{ Layout = "_Layout"; }
+
+@using MinimalBlazor.Pages.Components
+
+<div>
+    Index Page
+    @(await Html.RenderComponentAsync<HomeComponent>(RenderMode.ServerPrerendered))
+</div>
+
+
